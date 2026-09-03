@@ -23,4 +23,4 @@ The calculator requires three inputs:
 
 ## Description
 
-This project is a simple interest calculator developed using Bash scripting. It allows users to enter the principal amount, rate of interest, and time period and then calculates the simple interest.
+This project is a simple interest Calculator developed using Bash scripting. It allows users to enter the principal amount, rate of interest, and time period and then calculates the simple interest.
