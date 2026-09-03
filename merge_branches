@@ -1,6 +1,4 @@
 $ git checkout main
-Already on 'main'
-
 $ git merge bug-fix-typo
 Updating d87ecf0..7eb469d
 Fast-forward
