@@ -1,51 +1,135 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Recommendation</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <!-- Navigation Bar -->
     <nav>
         <a href="#home">Home</a>
         <a href="#about">About Us</a>
         <a href="#contact">Contact Us</a>
 
-        <input type="text" id="searchInput" placeholder="Enter a destination">
+        <input type="text" id="searchInput" placeholder="Search destination">
 
-        <button>Search</button>
-        <button>Clear</button>
+        <button onclick="searchDestination()">Search</button>
+        <button onclick="clearSearch()">Clear</button>
     </nav>
 
+    <!-- Home -->
     <section id="home">
         <h1>Travel Recommendation</h1>
+
         <p>
             Welcome to our Travel Recommendation website.
-            Discover beautiful destinations and plan your next journey.
+            Discover beautiful beaches, temples and countries around the world.
+            Find your next amazing travel destination with us.
         </p>
     </section>
 
+    <!-- Recommendations -->
+    <section id="recommendations">
+        <h2>Travel Recommendations</h2>
+
+        <div class="recommendations">
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
+                     alt="Beautiful Beach">
+
+                <div class="card-content">
+                    <h3>Beautiful Beach</h3>
+                    <p>Enjoy relaxing beaches, clear water and beautiful scenery.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1548013146-72479768bada"
+                     alt="Beautiful Temple">
+
+                <div class="card-content">
+                    <h3>Beautiful Temple</h3>
+                    <p>Explore historic temples and amazing architecture.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1521292270410-a8c4d716d518"
+                     alt="Beautiful Country">
+
+                <div class="card-content">
+                    <h3>Explore Countries</h3>
+                    <p>Discover new countries, cultures and unforgettable places.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Search Results -->
+    <section id="results">
+        <h2>Search Results</h2>
+        <div id="resultContainer"></div>
+    </section>
+
+    <!-- About Us -->
     <section id="about">
         <h2>About Us</h2>
+
         <p>
-            We help travelers discover beautiful destinations around the world.
+            Our Travel Recommendation website helps travelers discover
+            interesting destinations around the world.
+        </p>
+
+        <p>
+            Our team provides recommendations for beaches, temples and
+            countries to help users plan their next journey.
+        </p>
+
+        <p>
+            Team members should keep destination information updated,
+            check website links and make sure images and recommendations
+            are working correctly.
         </p>
     </section>
 
+    <!-- Contact Us -->
     <section id="contact">
         <h2>Contact Us</h2>
 
-        <p>Email: travel@example.com</p>
+        <p>Email: travelrecommendation@example.com</p>
 
-        <form>
-            <input type="email" placeholder="Enter your email">
-            <button type="submit">Send</button>
+        <form action="mailto:travelrecommendation@example.com"
+              method="post"
+              enctype="text/plain">
+
+            <input type="text" name="name" placeholder="Your Name" required>
+
+            <input type="email" name="email"
+                   placeholder="Your Email" required>
+
+            <textarea name="message"
+                      rows="5"
+                      placeholder="Your Message"
+                      required></textarea>
+
+            <button type="submit">Send Message</button>
+
         </form>
     </section>
 
+    <footer>
+        <p>© 2026 Travel Recommendation. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
 </body>
 </html>
-```
