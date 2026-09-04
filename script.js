@@ -5,7 +5,8 @@ function searchDestination() {
     const searchText = searchInput.value.toLowerCase().trim();
 
     if (searchText === "") {
-        resultContainer.innerHTML = "<p>Please enter a destination or category.</p>";
+        resultContainer.innerHTML =
+            "<p>Please enter a destination or category.</p>";
         return;
     }
 
@@ -75,7 +76,9 @@ function searchDestination() {
     }
 
     else {
-        resultContainer.innerHTML = "<p>No recommendation found. Try Beach, Temple, or Country.</p>";
+        resultContainer.innerHTML = `
+            <p>No recommendation found. Try searching for Beach, Temple, or Country.</p>
+        `;
     }
 }
 
